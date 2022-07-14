@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "yzMK5jf5/tKTK5HpY7JyiJYrOdF5YP6+oLCQsntdUy/an0smq2yMXo6MH2nFDQ/V1gqnrFmsPerhM/oZWoDhSQ==",
+  "success": true,
+  "projectFilePath": "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj",
+  "expectedPackageFiles": [
+    "/Users/aurelientallet/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/aurelientallet/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/aurelientallet/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/aurelientallet/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/aurelientallet/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/aurelientallet/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
