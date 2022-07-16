@@ -3,6 +3,18 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from '@/components/HelloWorld.vue'
 const msg = "ffdsfsd"
+const url = "https://localhost:7096/api/Recipes"
+fetch(url)
+    .then(response => {
+        // handle the response
+        return response.json()
+    }).then(data => {
+        // handle the data
+        console.log(data)
+    })
+    .catch(error => {
+        // handle the error
+    });
 </script>
 
 <template>
