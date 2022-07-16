@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj": {}
+    "/Users/aurelientallet/dev/projects/monpaniersaison/back/back.csproj": {}
   },
   "projects": {
-    "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj": {
+    "/Users/aurelientallet/dev/projects/monpaniersaison/back/back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj",
+        "projectUniqueName": "/Users/aurelientallet/dev/projects/monpaniersaison/back/back.csproj",
         "projectName": "back",
-        "projectPath": "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj",
+        "projectPath": "/Users/aurelientallet/dev/projects/monpaniersaison/back/back.csproj",
         "packagesPath": "/Users/aurelientallet/.nuget/packages/",
-        "outputPath": "/Users/aurelientallet/dev/projects/vue-dotnet/back/obj/",
+        "outputPath": "/Users/aurelientallet/dev/projects/monpaniersaison/back/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/aurelientallet/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
