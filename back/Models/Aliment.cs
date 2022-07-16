@@ -5,7 +5,7 @@ public class Aliment
     public static string[] TypeNames = { "Fruit", "Vegetable", "Unknow" };
     public static string[] NutriscoreNames = { "A", "B", "C", "D", "E", "Unknow" };
     public static string[] SeasonNames = { "Winter", "Spring", "Summer", "Autumn" };
-
+    public static string[] CountryNames = { "France", "Germany", "Italy", "Spain", "United Kingdom", "United States" };
     public string? Name { get; set; }
     public string? Description { get; set; }
     public string? Season { get; set; }
@@ -509,7 +509,7 @@ public class Aliment
         var list = new List<Aliment>();
         foreach (var item in Repository)
         {
-            list.Add(Create(item.Key, "description", GetRandom(SeasonNames), GetRandom(TypeNames), new Random().NextDouble() * 10.0, GetRandom(NutriscoreNames), item.Value, "localisation"));
+            list.Add(Create(item.Key, "description", GetRandom(SeasonNames), GetRandom(TypeNames), new Random().NextDouble() * 10.0, GetRandom(NutriscoreNames), item.Value, GetRandom(CountryNames)));
         }
         return list;
     }
