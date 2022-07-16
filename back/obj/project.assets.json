@@ -208,19 +208,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/aurelientallet/.nuget/packages/": {}
+    "/Users/strak/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj",
+      "projectUniqueName": "/Users/strak/dev/perso/MPS/monpaniersaison/back/back.csproj",
       "projectName": "back",
-      "projectPath": "/Users/aurelientallet/dev/projects/vue-dotnet/back/back.csproj",
-      "packagesPath": "/Users/aurelientallet/.nuget/packages/",
-      "outputPath": "/Users/aurelientallet/dev/projects/vue-dotnet/back/obj/",
+      "projectPath": "/Users/strak/dev/perso/MPS/monpaniersaison/back/back.csproj",
+      "packagesPath": "/Users/strak/.nuget/packages/",
+      "outputPath": "/Users/strak/dev/perso/MPS/monpaniersaison/back/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/aurelientallet/.nuget/NuGet/NuGet.Config"
+        "/Users/strak/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
