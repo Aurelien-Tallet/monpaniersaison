@@ -3,7 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from '@/components/HelloWorld.vue'
 const msg = "ffdsfsd"
-const url = "https://localhost:7096/api/Recipes"
+const url = "https://localhost:7096/api/aliments"
 fetch(url)
     .then(response => {
         // handle the response

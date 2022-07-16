@@ -13,4 +13,11 @@ public class AlimentsController : ControllerBase
         return Aliment.GetAll()
         .ToArray();
     }
+    [HttpGet("{id}", Name = "GetAliment")]
+    public Aliment Get(int id)
+    {
+        return Aliment.GetAll()
+        .FirstOrDefault(x => x.Id == id);
+    }
+
 }
