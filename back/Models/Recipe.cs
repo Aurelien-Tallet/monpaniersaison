@@ -10,7 +10,7 @@ public class Recipe
     public DateTime UpdatedAt { get; set; }
 
 
-   static public Recipe Create(string? name, string? description, string? ingredients)
+    static public Recipe Create(string? name, string? description, string? ingredients)
     {
         return new Recipe
         {
@@ -21,14 +21,8 @@ public class Recipe
             UpdatedAt = DateTime.Now
         };
     }
-    static public IEnumerable<Recipe> GetAll() {
-        return new List<Recipe>
-        {
-            Create("Recipe 1", "This is a description for recipe 1", "This is a list of ingredients for recipe 1"),
-            Create("Recipe 2", "This is a description for recipe 2", "This is a list of ingredients for recipe 2"),
-            Create("Recipe 3", "This is a description for recipe 3", "This is a list of ingredients for recipe 3"),
-            Create("Recipe 4", "This is a description for recipe 4", "This is a list of ingredients for recipe 4"),
-            Create("Recipe 5", "This is a description for recipe 5", "This is a list of ingredients for recipe 5")
-        };
-    } 
+    static public IEnumerable<Recipe> GetAll()
+    {
+        return Enumerable.Range(0, 10).Select((i) => Create("Recipe" + i , "This is a description for Recipe " + i, "Banane, Sucre, Lait, Fraise, Framboise, Glace Vanille")).ToArray();
+    }
 }
