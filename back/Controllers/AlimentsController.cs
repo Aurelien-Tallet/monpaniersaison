@@ -29,7 +29,7 @@ public class AlimentsController : ControllerBase
     public IEnumerable<Aliment> Get(string type)
     {
         return Aliment.GetAll()
-        .Where(aliment => aliment?.Type?.ToLower() == type.ToLower())
+        .Where(aliment => string.Equals(type, aliment.Type, StringComparison.OrdinalIgnoreCase))
         .ToArray();
     }
 
