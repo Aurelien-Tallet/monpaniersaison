@@ -16,8 +16,21 @@ public class AlimentsController : ControllerBase
     [HttpGet("{id}", Name = "GetAliment")]
     public Aliment Get(int id)
     {
+            var aliment = Aliment.GetAll().FirstOrDefault(aliment => aliment.Id == id);
+            if (aliment == null)
+            {
+                throw new Exception("Aliment not found");
+            }
+            return aliment;
+    }
+
+    // GET aliments by type
+    [HttpGet("type/{type}", Name = "GetAlimentsByType")]
+    public IEnumerable<Aliment> Get(string type)
+    {
         return Aliment.GetAll()
-        .FirstOrDefault(x => x.Id == id);
+        .Where(aliment => aliment?.Type?.ToLower() == type.ToLower())
+        .ToArray();
     }
 
 }
