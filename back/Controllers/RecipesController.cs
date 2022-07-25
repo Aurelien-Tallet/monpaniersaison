@@ -6,10 +6,11 @@ namespace back.Controllers;
 [Route("api/[controller]")]
 public class RecipesController : ControllerBase
 {
-    
+
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<Recipe> Get()
     {
-     return Recipe.GetAll();
+        return Recipe.GetAll();
     }
+    
 }

@@ -17,8 +17,9 @@ public class Aliment
     public string? ImageUrl { get; set; }
     public string? Localisation { get; set; }
 
-
-    public static IDictionary<string, string>? Repository = new Dictionary<string, string>
+   // Array of array of strings. Each array is a list of countries where the aliment is found.
+     
+   private static IDictionary<string, string>? Repository = new Dictionary<string, string>
     {
        {
          "ABRICOT",
@@ -477,6 +478,7 @@ public class Aliment
          "https://www.leparfait.fr/uploads/media/5f1034c14beb7.png"
     }
     };
+   
     public static Aliment Create(
         int id,
         string? name,
@@ -493,8 +495,8 @@ public class Aliment
             Id = id,
             Name = name,
             Description = description,
-            Season = season ,
-            Type = type ,
+            Season = season,
+            Type = type,
             Calories = calories,
             Nutriscore = nutriscore,
             ImageUrl = imageUrl,
@@ -514,7 +516,7 @@ public class Aliment
         var list = new List<Aliment>();
         foreach (var item in Repository)
         {
-            list.Add(Create(i++ ,item.Key.ToLower(), "description", GetRandom(SeasonNames), GetRandom(TypeNames), new Random().NextDouble() * 10.0, GetRandom(NutriscoreNames), item.Value, GetRandom(CountryNames)));
+            list.Add(Create(i++, item.Key.ToLower(), "description", GetRandom(SeasonNames), GetRandom(TypeNames), new Random().NextDouble() * 10.0, GetRandom(NutriscoreNames), item.Value, GetRandom(CountryNames)));
         }
         return list;
     }
